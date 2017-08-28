@@ -1,7 +1,7 @@
 ## About the project
 
 Source-code for OAuth module: [https://github.com/mavrk/openmrs-module-oauth2-prototype/tree/oauth2-pure-rest](https://github.com/mavrk/openmrs-module-oauth2-prototype/tree/oauth2-pure-rest)<br>
-Source-code for SMART app: [https://github.com/mavrk/SMART-on-fhir-client](https://github.com/mavrk/SMART-on-fhir-client)
+Source-code for SMART app: [https://github.com/mavrk/SMART-on-fhir-client](https://github.com/mavrk/SMART-on-fhir-client)<br>
 Source-code diff: [https://github.com/maany/openmrs-module-oauth2/compare/oauth2-openmrs-1.11.x...mavrk:oauth2-pure-rest](https://github.com/maany/openmrs-module-oauth2/compare/oauth2-openmrs-1.11.x...mavrk:oauth2-pure-rest)
 
 **Weekly blogs** : [http://planet.openmrs.org/](http://planet.openmrs.org/) [www.sanatt.me](https://www.sanatt.me)<br>
