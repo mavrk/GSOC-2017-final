@@ -4,7 +4,7 @@
 **Download the module** <a href="/GSOC-2017-final/oauth2-0.8.omod" download>.omod</a><br>
 **Download the smart-app**  <a href="/GSOC-2017-final/smart-app.zip" download>.zip</a>
 
-**This is only a project report, complete project documentation can be found [here]**(https://wiki.openmrs.org/display/projects/OAuth2+Module)
+**This is only a project report, complete project documentation can be found [here](https://wiki.openmrs.org/display/projects/OAuth2+Module)**
 
 **Project Title** : FHIR OAuth Smart Apps Integration and OAuth module enhancements
 
