@@ -3,7 +3,7 @@
 Source-code for OAuth module: [https://github.com/mavrk/openmrs-module-oauth2-prototype/tree/oauth2-pure-rest](https://github.com/mavrk/openmrs-module-oauth2-prototype/tree/oauth2-pure-rest)<br>
 Source-code for SMART app: [https://github.com/mavrk/SMART-on-fhir-client](https://github.com/mavrk/SMART-on-fhir-client)
  
-**Weekly blogs** : [http://planet.openmrs.org/](http://planet.openmrs.org/) [www.sanatt.me](www.sanatt.me)<br>
+**Weekly blogs** : [http://planet.openmrs.org/](http://planet.openmrs.org/) [www.sanatt.me](https://www.sanatt.me)<br>
 **Download the module** <a href="/GSOC-2017-final/oauth2-0.8.omod" download>.omod</a><br>
 **Download the smart-app**  <a href="/GSOC-2017-final/smart-app.zip" download>.zip</a>
 
