@@ -44,7 +44,7 @@ The project invloved the following main tasks :
     <iframe width="560" height="315" src="https://www.youtube.com/embed/y2eSck9JUn0" frameborder="0" allowfullscreen></iframe>
 
 - ### SMART on FHIR Application <br>
-    This was one of the main goals for the summer. Even if we managed to create the OAuth module, there was not a lot of application to     it. SMART on FHIR is a perfect use-case for our module. So making a sample SMART on FHIR would give OpenMRS community a perfect use-     case for our module. The application came by easily. Their were a few blockers but nothing which would consume 'days' of debugging.     I also made a custom CORS filter for the module to enable Cross-Origin requests if SMART application is hosted on a different s         server.
+    This was one of the main goals for the summer. Even if we managed to create the OAuth module, their was not a lot of application to     it. SMART on FHIR is a perfect use-case for our module. So making a sample SMART on FHIR would give OpenMRS community a perfect use-     case for our module. The application came by easily. Their were a few blockers but nothing which would consume 'days' of debugging.     I also made a custom CORS filter for the module to enable Cross-Origin requests if SMART application is hosted on a different s         server.
     
     A demo of SMART on FHIR :
     <iframe width="560" height="315" src="https://www.youtube.com/embed/WYz5ykLTOos" frameborder="0" allowfullscreen></iframe>
