@@ -1,12 +1,18 @@
 ## About the project
 
+** This is only a project report, complete project documentation can be found [here](https://wiki.openmrs.org/display/projects/OAuth2+Module)
+
 **Project Title** : FHIR OAuth Smart Apps Integration and OAuth module enhancements
+
 **Primary Mentor** : Mayank Sharma
 
+**Project Stats** : 28 major commits, 1200+ lines of code (900+ additions and 300+ deletions)
+
+
 The project invloved the following main tasks :
-- [ x ] Migration to OpenMRS 2.x
-- [ x ] Create a new REST Controller
-- [ x ] SMART on FHIR application
+- [x] Migration to OpenMRS 2.x
+- [x] Create a new REST Controller
+- [x] SMART on FHIR application
 
 ### Detailed task description and sub-goals
 
@@ -24,30 +30,22 @@ The project invloved the following main tasks :
     You can see my mid-term demo here : 
     <iframe width="560" height="315" src="https://www.youtube.com/embed/8xicdkiaRas" frameborder="0" allowfullscreen></iframe>
   
-```markdown
-Syntax highlighted code block
+- #### Client REST Controller
+    After the mid-terms the point of focus was the REST Controller. Using this controller, one could create, manage, view oauth clients     without the UI. Which means that any OWA, Android app, iOS app, etc would be able to manage, create oauth clients and it won't           require opening OpenMRS on a browser and handing everything. Just like almost everything in this summer, the controller didn't go as     planned :stuck_out_tongue: Problem? I wanted to return a client object as JSON response, however Jackson (which handles JSON outputs     in Spring) gave the error "property leading to cycles". Upon research I realized that Jackson depends on getter and setter methods       of a class. My client inherited properties such as getCreator() , getVoidedBy() from the BaseOpenMrsData. getCreator() returns a         User, the User also has a getCreator(), so that formed an infinite loop whenever getCreator() was called by Jackson. So what I did       next was that I broke this loop by creating a new JacksonMappableClient. And now everyone was happy :smile:
+    
+    You can see a demo for the Client REST Controller here : 
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/y2eSck9JUn0" frameborder="0" allowfullscreen></iframe>
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/mavrk/GSOC-2017-final/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+- #### SMART on FHIR Application
+    This was one of the main goals for the summer. Even if we managed to create the OAuth module, there was not a lot of application to     it. SMART on FHIR is a perfect use-case for our module. So making a sample SMART on FHIR would give OpenMRS community a perfect use-     case for our module. The application came by easily. Their were a few blockers but nothing which would consume 'days' of debugging.     I also made a custom CORS filter for the module to enable Cross-Origin requests if SMART application is hosted on a different s         server.
+    
+    A demo of SMART on FHIR :
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/WYz5ykLTOos" frameborder="0" allowfullscreen></iframe>
+    
+ ## Proper project documentation : [here](https://wiki.openmrs.org/display/projects/OAuth2+Module)
+ 
+ ## OpenMRS final presentation : [Talk thread](https://talk.openmrs.org/t/gsoc-2017-oauth-module-and-fhir-smart-apps-integration-final-presentation/13067)
+ 
+ 
+ 
+ 
