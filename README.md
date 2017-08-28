@@ -18,9 +18,9 @@ The project invloved the following main tasks :
 - [x] Create a new REST Controller
 - [x] SMART on FHIR application
 
-### Detailed task description and sub-goals
+### Detailed task description and sub-goals ###
 
-- #### Migration to OpenMRS 2.x
+- ### Migration to OpenMRS 2.x ###<br>
   - **Migrate dependencies and configurations to be compatible with OpenMRS 2.x**
     The module previously ran on OpenMRS 1.11 and worked with Spring Security 3. My initial task was to migrate the module to OpenMRS       2.x and use Spring 4 and Spring Security 4. This part took a lot longer that what me and Mayank thought. Spring Security is a           complex framework and it's compatibility issues with Spring versions are many. I had to remove all the deprecated code with new code     and also fix some broken part of the code. 
     A lot had changed from OpenMRS 1.11 to 2.X So I had to redo the whole OAuth Client data model and re-write some portions of the         client.
@@ -34,13 +34,13 @@ The project invloved the following main tasks :
     You can see my mid-term demo here : 
     <iframe width="560" height="315" src="https://www.youtube.com/embed/8xicdkiaRas" frameborder="0" allowfullscreen></iframe>
   
-- #### Client REST Controller
+- ### Client REST Controller ###<br>
     After the mid-terms the point of focus was the REST Controller. Using this controller, one could create, manage, view oauth clients     without the UI. Which means that any OWA, Android app, iOS app, etc would be able to manage, create oauth clients and it won't           require opening OpenMRS on a browser and handing everything. Just like almost everything in this summer, the controller didn't go as     planned :stuck_out_tongue: Problem? I wanted to return a client object as JSON response, however Jackson (which handles JSON outputs     in Spring) gave the error "property leading to cycles". Upon research I realized that Jackson depends on getter and setter methods       of a class. My client inherited properties such as getCreator() , getVoidedBy() from the BaseOpenMrsData. getCreator() returns a         User, the User also has a getCreator(), so that formed an infinite loop whenever getCreator() was called by Jackson. So what I did       next was that I broke this loop by creating a new JacksonMappableClient. And now everyone was happy :smile:
     
     You can see a demo for the Client REST Controller here : 
     <iframe width="560" height="315" src="https://www.youtube.com/embed/y2eSck9JUn0" frameborder="0" allowfullscreen></iframe>
 
-- #### SMART on FHIR Application
+- ### SMART on FHIR Application ###<br>
     This was one of the main goals for the summer. Even if we managed to create the OAuth module, there was not a lot of application to     it. SMART on FHIR is a perfect use-case for our module. So making a sample SMART on FHIR would give OpenMRS community a perfect use-     case for our module. The application came by easily. Their were a few blockers but nothing which would consume 'days' of debugging.     I also made a custom CORS filter for the module to enable Cross-Origin requests if SMART application is hosted on a different s         server.
     
     A demo of SMART on FHIR :
@@ -51,8 +51,8 @@ The project invloved the following main tasks :
  
  ## OpenMRS final presentation ## : [Talk thread](https://talk.openmrs.org/t/gsoc-2017-oauth-module-and-fhir-smart-apps-integration-final-presentation/13067)
  
- Source-code for OAuth module: https://github.com/mavrk/openmrs-module-oauth2-prototype/tree/oauth2-pure-rest
- Source-code for SMART app: https://github.com/mavrk/SMART-on-fhir-client
+ Source-code for OAuth module: [https://github.com/mavrk/openmrs-module-oauth2-prototype/tree/oauth2-pure-rest](https://github.com/mavrk/openmrs-module-oauth2-prototype/tree/oauth2-pure-rest)
+ <br>Source-code for SMART app: [https://github.com/mavrk/openmrs-module-oauth2-prototype/tree/oauth2-pure-rest](https://github.com/mavrk/openmrs-module-oauth2-prototype/tree/oauth2-pure-rest)
  
  
  
