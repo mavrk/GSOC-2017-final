@@ -4,9 +4,9 @@
 **Primary Mentor** : Mayank Sharma
 
 The project invloved the following main tasks :
-- [x] Migration to OpenMRS 2.x
-- [x] Create a new REST Controller
-- [x] SMART on FHIR application
+- [ x ] Migration to OpenMRS 2.x
+- [ x ] Create a new REST Controller
+- [ x ] SMART on FHIR application
 
 ### Detailed task description and sub-goals
 
