@@ -47,9 +47,9 @@ The project invloved the following main tasks :
     <iframe width="560" height="315" src="https://www.youtube.com/embed/WYz5ykLTOos" frameborder="0" allowfullscreen></iframe>
     
     
- ## Proper project documentation ## : [here](https://wiki.openmrs.org/display/projects/OAuth2+Module)
+ **Proper project documentation** : [here](https://wiki.openmrs.org/display/projects/OAuth2+Module)
  
- ## OpenMRS final presentation ## : [Talk thread](https://talk.openmrs.org/t/gsoc-2017-oauth-module-and-fhir-smart-apps-integration-final-presentation/13067)
+ **OpenMRS final presentation** : [Talk thread](https://talk.openmrs.org/t/gsoc-2017-oauth-module-and-fhir-smart-apps-integration-final-presentation/13067)
  
  Source-code for OAuth module: [https://github.com/mavrk/openmrs-module-oauth2-prototype/tree/oauth2-pure-rest](https://github.com/mavrk/openmrs-module-oauth2-prototype/tree/oauth2-pure-rest)
  <br>Source-code for SMART app: [https://github.com/mavrk/openmrs-module-oauth2-prototype/tree/oauth2-pure-rest](https://github.com/mavrk/openmrs-module-oauth2-prototype/tree/oauth2-pure-rest)
